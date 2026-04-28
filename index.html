@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aditya Chaudhary | ESG & ZED Consultant for MSMEs | Sonipat, Haryana</title>
 <meta name="description" content="India's ZED Certified ESG Consultant helping MSMEs cut costs 15–20%, earn ZED certification, and unlock export markets. 15+ companies transformed.">
-<meta name="keywords" content="ESG consultant India, ZED certification consultant, MSME ESG advisory, BRSR compliance, GRI consultant India, ZED facilitator Haryana, sustainability consultant MSME">
 <meta name="author" content="Aditya Chaudhary">
 <link rel="canonical" href="https://vendorverify.in">
 
+<!-- Open Graph -->
 <meta property="og:title" content="Aditya Chaudhary | ESG & ZED Consultant for MSMEs">
 <meta property="og:description" content="Cut costs 15–20% and earn ZED certification. India's manufacturing-native ESG consultant for MSMEs.">
 <meta property="og:type" content="website">
@@ -19,8 +19,9 @@
 <meta name="twitter:description" content="Cut costs 15–20% and earn ZED certification. India's manufacturing-native ESG consultant for MSMEs.">
 <meta name="twitter:image" content="https://vendorverify.in/og-image.jpg">
 
+<!-- Schema.org — fixed telephone format -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Aditya Chaudhary – ESG & ZED Consultant","description":"ESG Analyst and ZED Certified Facilitator helping Indian MSMEs achieve sustainability compliance and operational efficiency.","url":"https://vendorverify.in","telephone":"+91-9637439000","email":"aditya.riskauditor@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Sonipat","addressRegion":"Haryana","addressCountry":"IN"},"serviceType":["ESG Consulting","ZED Certification","BRSR Compliance","GRI Reporting"]}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Aditya Chaudhary – ESG & ZED Consultant","description":"ESG Analyst and ZED Certified Facilitator helping Indian MSMEs achieve sustainability compliance and operational efficiency.","url":"https://vendorverify.in","telephone":"+919637439000","email":"aditya.riskauditor@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Sonipat","addressRegion":"Haryana","addressCountry":"IN"},"serviceType":["ESG Consulting","ZED Certification","BRSR Compliance","GRI Reporting"]}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,7 @@
 
 <style>
 /* ══════════════════════════════════
-   DESIGN TOKENS — LIGHT THEME
+   DESIGN TOKENS
 ══════════════════════════════════ */
 :root {
   --orange:   #f47920;
@@ -38,145 +39,1845 @@
   --teal-mid: #005c6e;
   --steel:    #367394;
   --steel-lt: #5a9ab5;
+
   --bg:        #f5f3ef;
+  --bg-white:  #ffffff;
+  --bg-soft:   #eef7f9;
+  --bg-cream:  #faf7f3;
+
   --text:      #0d1f24;
+  --text-mid:  #2d4a54;
   --text-soft: #4a7080;
+  --text-mute: #8aacb5;
+
+  --c-green:   #16a34a;
+  --c-amber:   #d97706;
+  --c-red:     #dc2626;
+  --c-purple:  #7c3aed;
+  --c-sky:     #0284c7;
+  --c-teal2:   #0f766e;
+
   --border:    rgba(0,62,72,0.10);
   --border-md: rgba(0,62,72,0.18);
   --sh-sm:     0 2px 8px rgba(0,30,40,0.07);
   --sh-md:     0 8px 32px rgba(0,30,40,0.10);
+  --sh-lg:     0 20px 60px rgba(0,30,40,0.14);
+
+  --s1:4px;  --s2:8px;   --s3:12px;  --s4:16px;
+  --s5:24px; --s6:32px;  --s7:48px;  --s8:64px;
+  --s9:96px; --s10:128px;
+
   --ease: cubic-bezier(0.16,1,0.3,1);
-  --s9: 96px; --s7: 48px; --s6: 32px; --s5: 24px; --s4: 16px; --s3: 12px; --s2: 8px;
 }
 
+/* ══════════════════════════════════
+   RESET & BASE
+══════════════════════════════════ */
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0 }
-body { background:var(--bg); color:var(--text); font-family:'Lato',sans-serif; overflow-x:hidden; line-height: 1.6; }
-
-/* TYPOGRAPHY */
-.t-headline { font-family:'Barlow Condensed',sans-serif; font-size:clamp(2.5rem,7vw,6rem); font-weight:800; line-height:.93; text-transform:uppercase; }
-.h1-fire { color:var(--orange) } .h1-dark { color:var(--teal) }
-.t-label { font-family:'Barlow Condensed',sans-serif; font-size:.7rem; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:var(--orange); }
-
-/* BUTTONS */
-.btn { display:inline-flex; align-items:center; gap:var(--s3); padding:13px 26px; border-radius:4px; font-family:'Barlow Condensed',sans-serif; font-size:.82rem; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; transition:all .25s; cursor:pointer; text-decoration:none; }
-.btn-wa { background:#22c55e; color:#fff; }
-.btn-wa:hover { background:#16a34a; transform:translateY(-2px); box-shadow:0 10px 28px rgba(34,197,94,.35); }
-.btn-wa svg { width:18px; height:18px; fill:#fff; }
-
-/* ANIMATIONS */
-@keyframes fadeUp { from { opacity:0; transform:translateY(36px); } to { opacity:1; transform:translateY(0); } }
-@keyframes blink { 0%, 100% { opacity:1; } 50% { opacity:0.3; } }
-.reveal { opacity:0; transform:translateY(36px); transition:opacity .85s var(--ease), transform .85s var(--ease); }
-.reveal.in { opacity:1; transform:none; }
-
-/* COMPONENTS */
-.section { padding:var(--s9) 6%; }
-#main-nav { position:fixed; top:0; left:0; right:0; z-index:500; padding:var(--s5) 6%; display:flex; justify-content:space-between; align-items:center; transition:all .4s; }
-#main-nav.scrolled { background:rgba(255,255,255,.97); backdrop-filter:blur(20px); box-shadow:var(--sh-sm); padding:var(--s3) 6%; }
-
-.proof-strip { display:grid; grid-template-columns:repeat(4,1fr); background:#fff; border:1px solid var(--border-md); border-radius:8px; overflow:hidden; box-shadow:var(--sh-md); margin-top:var(--s9); }
-@media (max-width: 768px) {
-  .proof-strip { grid-template-columns:repeat(2,1fr); }
-  .proof-cell:nth-child(3), .proof-cell:nth-child(4) { border-top: 1px solid var(--border); }
+html { scroll-behavior:smooth; font-size:16px }
+body {
+  background:var(--bg); color:var(--text);
+  font-family:'Lato',sans-serif; font-weight:400;
+  line-height:1.6; overflow-x:hidden;
 }
-.proof-cell { padding:var(--s5) var(--s6); text-align:center; border-right:1px solid var(--border); }
-.proof-cell:last-child { border-right:none; }
+img  { max-width:100%; display:block }
+a    { color:inherit; text-decoration:none }
+button { cursor:pointer; font-family:inherit }
 
-/* FIX #4: Correct class naming */
-.diff-box { margin-top:var(--s6); padding:var(--s5); background:rgba(0,62,72,0.05); border:1px solid var(--border-md); border-radius:4px }
-.diff-inner { font-size:.9rem; color:var(--text-soft); line-height:1.7; margin:0; }
+/* ══════════════════════════════════
+   KEYFRAMES — FIX: defined here so all animations work
+══════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(28px) }
+  to   { opacity:1; transform:translateY(0) }
+}
+@keyframes blink {
+  0%,100% { opacity:1 }
+  50%      { opacity:.35 }
+}
+@keyframes slideInLeft {
+  from { opacity:0; transform:translateX(-20px) }
+  to   { opacity:1; transform:translateX(0) }
+}
+@keyframes pulse-ring {
+  0%   { transform:scale(1); opacity:.6 }
+  100% { transform:scale(1.6); opacity:0 }
+}
+@keyframes fillBar {
+  from { width:0 }
+}
 
-.urgency-dot { width:8px; height:8px; border-radius:50%; background:var(--orange); animation:blink 1.5s ease infinite }
+/* ══════════════════════════════════
+   TYPOGRAPHY
+══════════════════════════════════ */
+.t-label {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(.65rem,.8vw,.75rem); font-weight:700;
+  letter-spacing:4px; text-transform:uppercase; color:var(--orange);
+}
+.t-headline {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(1.9rem,4vw,3.2rem); font-weight:700;
+  line-height:1.08; letter-spacing:-.01em;
+  text-transform:uppercase; color:var(--teal);
+}
+.t-body { font-size:1rem; line-height:1.8; color:var(--text-soft); }
+em.accent { font-style:italic; color:var(--orange); }
+strong { font-weight:700; color:var(--text); }
+
+/* ══════════════════════════════════
+   LAYOUT
+══════════════════════════════════ */
+.section { padding:var(--s9) 6%; }
+
+/* ══════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════ */
+.reveal {
+  opacity:0; transform:translateY(36px);
+  transition:opacity .85s var(--ease),transform .85s var(--ease);
+}
+.reveal.d1 { transition-delay:.1s }
+.reveal.d2 { transition-delay:.2s }
+.reveal.d3 { transition-delay:.3s }
+.reveal.d4 { transition-delay:.4s }
+.reveal.in { opacity:1; transform:none }
+
+/* ══════════════════════════════════
+   BUTTONS
+══════════════════════════════════ */
+.btn {
+  display:inline-flex; align-items:center; gap:var(--s3);
+  padding:13px 26px; border-radius:4px; border:none;
+  font-family:'Barlow Condensed',sans-serif; font-size:.82rem;
+  font-weight:700; letter-spacing:2.5px; text-transform:uppercase;
+  transition:all .25s; white-space:nowrap; cursor:pointer;
+}
+.btn svg { width:16px; height:16px; flex-shrink:0 }
+.btn-primary { background:var(--orange); color:#fff }
+.btn-primary:hover {
+  background:var(--ember); transform:translateY(-2px);
+  box-shadow:0 10px 28px rgba(244,121,32,.3);
+}
+.btn-teal { background:var(--teal); color:#fff }
+.btn-teal:hover {
+  background:var(--teal-mid); transform:translateY(-2px);
+  box-shadow:0 10px 28px rgba(0,62,72,.25);
+}
+.btn-outline {
+  background:transparent; color:var(--teal);
+  border:1.5px solid var(--border-md);
+}
+.btn-outline:hover { border-color:var(--teal); background:var(--bg-soft) }
+.btn-wa { background:#22c55e; color:#fff }
+.btn-wa:hover {
+  background:#16a34a; transform:translateY(-2px);
+  box-shadow:0 10px 28px rgba(34,197,94,.35);
+}
+.btn-ghost-light {
+  background:transparent; color:#fff;
+  border:1.5px solid rgba(255,255,255,.25);
+}
+.btn-ghost-light:hover {
+  border-color:rgba(255,255,255,.5);
+  background:rgba(255,255,255,.06);
+}
+
+/* ══════════════════════════════════
+   CHAPTER BREAK
+══════════════════════════════════ */
+.chapter-break {
+  padding:0 6%; display:flex;
+  align-items:center; gap:var(--s5);
+}
+.chapter-num {
+  font-family:'Barlow Condensed',sans-serif; font-size:.65rem;
+  font-weight:700; letter-spacing:4px; text-transform:uppercase;
+  color:var(--steel-lt); white-space:nowrap;
+}
+.chapter-rule { flex:1; height:1px; background:var(--border-md) }
+
+/* ══════════════════════════════════
+   NAV
+══════════════════════════════════ */
+#main-nav {
+  position:fixed; top:0; left:0; right:0; z-index:500;
+  padding:var(--s5) 6%;
+  display:flex; justify-content:space-between; align-items:center;
+  background:rgba(245,243,239,0);
+  border-bottom:1px solid transparent;
+  transition:background .4s,padding .35s,border-color .4s,box-shadow .4s;
+}
+#main-nav.scrolled {
+  background:rgba(255,255,255,.97);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom-color:var(--border);
+  box-shadow:var(--sh-sm);
+  padding:var(--s3) 6%;
+}
+.nav-mark {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:1.05rem; font-weight:800;
+  letter-spacing:3px; text-transform:uppercase; color:var(--teal);
+}
+.nav-mark span { color:var(--orange) }
+.nav-links {
+  display:flex; gap:var(--s7);
+  list-style:none; align-items:center;
+}
+.nav-links a {
+  font-family:'Barlow Condensed',sans-serif; font-size:.72rem;
+  font-weight:700; letter-spacing:2.5px; text-transform:uppercase;
+  color:var(--text-soft); transition:color .2s; position:relative;
+}
+.nav-links a::after {
+  content:''; position:absolute; bottom:-4px; left:0; right:0;
+  height:2px; background:var(--orange);
+  transform:scaleX(0); transform-origin:left; transition:transform .3s;
+}
+.nav-links a:hover { color:var(--teal) }
+.nav-links a:hover::after { transform:scaleX(1) }
+.nav-right { display:flex; align-items:center; gap:var(--s4) }
+.nav-cta {
+  display:flex; align-items:center; gap:var(--s2);
+  background:var(--orange); color:#fff;
+  padding:9px 18px; border-radius:4px;
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:.72rem; font-weight:700;
+  letter-spacing:2px; text-transform:uppercase;
+  transition:background .2s,transform .2s; white-space:nowrap;
+}
+.nav-cta:hover { background:var(--ember); transform:translateY(-1px) }
+.nav-cta svg { width:14px; height:14px; fill:currentColor; flex-shrink:0 }
+
+/* Hamburger */
+.hamburger {
+  display:none; flex-direction:column;
+  gap:5px; background:none; border:none; padding:var(--s2);
+  z-index:600; position:relative;
+}
+.hamburger span {
+  display:block; width:24px; height:2px;
+  background:var(--teal);
+  transition:transform .3s var(--ease),opacity .3s;
+}
+.hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg) }
+.hamburger.open span:nth-child(2) { opacity:0 }
+.hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg) }
+
+/* FIX: Mobile menu — use opacity+pointer-events only, NOT display:none
+   so JS class toggle works reliably without needing inline style */
+.mob-menu {
+  position:fixed; inset:0; z-index:490;
+  background:#fff;
+  display:flex;           /* always flex, never display:none */
+  flex-direction:column;
+  justify-content:center; align-items:center; gap:var(--s6);
+  opacity:0; pointer-events:none;
+  transition:opacity .35s var(--ease);
+}
+.mob-menu.open {
+  opacity:1; pointer-events:all;
+}
+.mob-menu a {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(2rem,7vw,3.2rem);
+  font-weight:700; letter-spacing:3px;
+  text-transform:uppercase; color:var(--teal);
+  transition:color .2s;
+  opacity:0; transform:translateY(16px);
+  transition:color .2s, opacity .4s var(--ease), transform .4s var(--ease);
+}
+.mob-menu.open a {
+  opacity:1; transform:translateY(0);
+}
+.mob-menu.open a:nth-child(1) { transition-delay:.05s }
+.mob-menu.open a:nth-child(2) { transition-delay:.1s }
+.mob-menu.open a:nth-child(3) { transition-delay:.15s }
+.mob-menu.open a:nth-child(4) { transition-delay:.2s }
+.mob-menu.open a:nth-child(5) { transition-delay:.25s }
+.mob-menu a:hover { color:var(--orange) }
+.mob-cta-link {
+  display:flex !important; align-items:center !important; gap:var(--s3) !important;
+  background:var(--orange) !important; color:#fff !important;
+  padding:var(--s4) var(--s7) !important; border-radius:4px !important;
+  font-size:1rem !important; margin-top:var(--s4) !important;
+  transition-delay:.3s !important;
+}
+.mob-cta-link svg { width:18px; height:18px; fill:#fff }
+
+/* ══════════════════════════════════
+   PROLOGUE / HERO
+══════════════════════════════════ */
+#prologue {
+  /* FIX: dvh fallback for iOS Safari dynamic toolbar */
+  min-height:100vh;
+  min-height:100dvh;
+  display:flex; flex-direction:column; justify-content:center;
+  padding:calc(var(--s9) + 70px) 6% var(--s7);
+  background:linear-gradient(150deg,#fff 0%,#eef7f9 40%,#f5f3ef 100%);
+  position:relative; overflow:hidden;
+}
+#prologue::before {
+  content:''; position:absolute; top:-80px; right:-100px;
+  width:550px; height:550px; border-radius:50%;
+  background:radial-gradient(circle,rgba(0,92,110,.07) 0%,transparent 70%);
+  pointer-events:none;
+}
+#prologue::after {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(0,62,72,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(0,62,72,.04) 1px,transparent 1px);
+  background-size:64px 64px;
+  /* FIX: add -webkit- prefix for older Safari/Chrome */
+  -webkit-mask-image:radial-gradient(ellipse 70% 70% at 90% 20%,black 20%,transparent 70%);
+  mask-image:radial-gradient(ellipse 70% 70% at 90% 20%,black 20%,transparent 70%);
+}
+.prologue-eyebrow {
+  display:flex; align-items:center; gap:var(--s4);
+  margin-bottom:var(--s6);
+  opacity:0; animation:fadeUp .9s var(--ease) .2s forwards;
+}
+.pro-line { width:40px; height:2px; background:var(--orange) }
+.prologue-h1 {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(3rem,8vw,7.5rem); font-weight:800;
+  line-height:.93; letter-spacing:-.025em;
+  text-transform:uppercase; max-width:920px;
+  opacity:0; animation:fadeUp 1.1s var(--ease) .35s forwards;
+}
+.h1-ghost {
+  display:block;
+  color:rgba(0,62,72,.12);
+  -webkit-text-stroke:1.5px rgba(0,62,72,.18);
+}
+.h1-fire  { display:block; color:var(--orange) }
+.h1-dark  { display:block; color:var(--teal) }
+.prologue-sub {
+  font-size:clamp(1rem,1.6vw,1.2rem);
+  color:var(--text-soft); line-height:1.75;
+  max-width:500px; margin-top:var(--s6); font-style:italic;
+  opacity:0; animation:fadeUp 1s var(--ease) .55s forwards;
+}
+.urgency-strip {
+  display:inline-flex; align-items:center; gap:var(--s3);
+  margin-top:var(--s5); padding:var(--s3) var(--s5);
+  background:rgba(244,121,32,.08);
+  border:1px solid rgba(244,121,32,.3); border-radius:100px;
+  opacity:0; animation:fadeUp .9s var(--ease) .7s forwards;
+}
+.urgency-dot {
+  width:8px; height:8px; border-radius:50%;
+  background:var(--orange); flex-shrink:0;
+  animation:blink 1.5s ease infinite;
+}
+.urgency-text {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:.7rem; font-weight:700;
+  letter-spacing:2px; text-transform:uppercase; color:var(--orange);
+}
+.prologue-actions {
+  display:flex; gap:var(--s4); flex-wrap:wrap; margin-top:var(--s7);
+  opacity:0; animation:fadeUp .9s var(--ease) .85s forwards;
+}
+
+/* Proof strip — FIX: removed overflow-causing negative margin trick */
+.proof-strip {
+  display:grid; grid-template-columns:repeat(4,1fr);
+  margin-top:var(--s9);
+  border:1px solid var(--border-md); border-radius:8px;
+  overflow:hidden; background:#fff; box-shadow:var(--sh-md);
+  opacity:0; animation:fadeUp 1s var(--ease) 1s forwards;
+}
+.proof-cell {
+  padding:var(--s5) var(--s6); text-align:center;
+  border-right:1px solid var(--border);
+}
+.proof-cell:last-child { border-right:none }
+.proof-icon {
+  width:44px; height:44px; border-radius:10px;
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto var(--s3);
+}
+.proof-icon svg { width:22px; height:22px }
+.proof-num {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:2.2rem; font-weight:800;
+  color:var(--teal); line-height:1;
+}
+.proof-lbl {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:.65rem; font-weight:700;
+  letter-spacing:2px; text-transform:uppercase;
+  color:var(--text-soft); margin-top:4px;
+}
+
+/* ══════════════════════════════════
+   ACT I — THE WALL
+══════════════════════════════════ */
+#act1 { padding:var(--s9) 6%; background:#fff }
+.act1-grid {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:var(--s10); align-items:center;
+}
+.pain-list {
+  list-style:none; margin-top:var(--s6);
+  display:flex; flex-direction:column; gap:var(--s3);
+}
+.pain-item {
+  display:flex; align-items:flex-start; gap:var(--s4);
+  padding:var(--s5);
+  background:var(--bg); border:1px solid var(--border);
+  border-left:3px solid var(--orange); border-radius:4px;
+  transition:box-shadow .25s;
+}
+.pain-item:hover { box-shadow:var(--sh-sm) }
+.pain-icon {
+  width:36px; height:36px; border-radius:8px;
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.pain-icon svg { width:18px; height:18px }
+.pain-text { font-size:.9rem; color:var(--text-soft); line-height:1.6 }
+
+/* Quote block */
+.quote-block {
+  background:var(--teal); border-radius:8px;
+  padding:var(--s8) var(--s7);
+  position:relative; overflow:hidden;
+}
+.quote-block::before {
+  content:'\201C'; position:absolute; top:-40px; left:var(--s5);
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:14rem; line-height:1;
+  color:rgba(255,255,255,.06); pointer-events:none;
+}
+.quote-accent {
+  position:absolute; top:0; left:0; right:0; height:4px;
+  background:linear-gradient(90deg,var(--orange),var(--steel-lt));
+}
+.quote-text {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(1.3rem,2.5vw,1.85rem);
+  font-style:italic; font-weight:600; line-height:1.4;
+  color:#fff; position:relative; z-index:1;
+}
+.quote-cite {
+  display:block; margin-top:var(--s5);
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:.7rem; font-weight:700; letter-spacing:3px;
+  text-transform:uppercase; color:rgba(255,255,255,.5);
+}
+/* FIX: .diff-box p was invalid — using .diff-inner instead */
+.diff-box {
+  margin-top:var(--s6); padding:var(--s5);
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.12); border-radius:4px;
+}
+.diff-inner { font-size:.9rem; color:rgba(255,255,255,.7); line-height:1.7 }
+
+/* ══════════════════════════════════
+   ACT II — THE GUIDE
+══════════════════════════════════ */
+#act2 { padding:var(--s9) 6%; background:var(--bg) }
+.act2-grid {
+  display:grid; grid-template-columns:1.3fr 1fr;
+  gap:var(--s10); align-items:start;
+}
+.story-p {
+  font-size:1.05rem; color:var(--text-soft);
+  line-height:1.85; margin-top:var(--s5);
+}
+.cred-stack {
+  display:flex; flex-direction:column;
+  gap:var(--s3); margin-top:var(--s6);
+}
+.cred-pill {
+  display:flex; align-items:center; gap:var(--s4);
+  background:#fff; border:1px solid var(--border); border-radius:100px;
+  padding:var(--s3) var(--s5); font-size:.88rem; color:var(--text-mid);
+  box-shadow:var(--sh-sm); transition:box-shadow .2s,border-color .2s;
+}
+.cred-pill:hover { box-shadow:var(--sh-md); border-color:var(--orange) }
+.cred-dot-box {
+  width:30px; height:30px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.cred-dot-box svg { width:15px; height:15px }
+.cred-badge {
+  margin-left:auto;
+  font-family:'Barlow Condensed',sans-serif; font-size:.6rem;
+  font-weight:700; letter-spacing:2px; text-transform:uppercase;
+  color:var(--orange); background:rgba(244,121,32,.1);
+  border:1px solid rgba(244,121,32,.25);
+  padding:2px 8px; border-radius:100px; white-space:nowrap;
+}
+
+/* Metric cards — FIX: bar animation triggered by .in class via JS */
+.metrics-col { display:flex; flex-direction:column; gap:var(--s4) }
+.metric-card {
+  background:#fff; border:1px solid var(--border); border-radius:8px;
+  padding:var(--s6); box-shadow:var(--sh-sm);
+  display:flex; align-items:flex-start; gap:var(--s5);
+  transition:box-shadow .3s,transform .3s;
+}
+.metric-card:hover { box-shadow:var(--sh-md); transform:translateY(-3px) }
+.metric-icon {
+  width:52px; height:52px; border-radius:12px;
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.metric-icon svg { width:26px; height:26px }
+.metric-big {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:2.6rem; font-weight:800; color:var(--teal); line-height:1;
+}
+.metric-lbl { font-size:.82rem; color:var(--text-soft); margin-top:4px; line-height:1.5 }
+.metric-bar {
+  margin-top:var(--s3); height:3px;
+  background:var(--bg-soft); border-radius:2px; overflow:hidden;
+}
+.metric-bar-fill {
+  height:100%;
+  background:linear-gradient(90deg,var(--orange),var(--steel));
+  width:0; border-radius:2px;
+  transition:width 1.4s var(--ease);
+}
+/* FIX: bars animate when parent reveal gets .in */
+.reveal.in .metric-bar-fill[data-w] {
+  width:attr(data-w); /* fallback — width set via JS */
+}
+
+/* ══════════════════════════════════
+   ACT III — SERVICES
+══════════════════════════════════ */
+#act3 { padding:var(--s9) 6%; background:#fff }
+.services-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:var(--s5); margin-top:var(--s8);
+}
+.svc-card {
+  background:var(--bg); border:1px solid var(--border); border-radius:10px;
+  padding:var(--s7) var(--s6); position:relative; overflow:hidden;
+  transition:box-shadow .35s,transform .35s;
+}
+.svc-card:hover { box-shadow:var(--sh-lg); transform:translateY(-5px) }
+.svc-top-bar {
+  position:absolute; top:0; left:0; right:0; height:3px;
+  transform:scaleX(0); transform-origin:left; transition:transform .5s var(--ease);
+}
+.svc-card:hover .svc-top-bar { transform:scaleX(1) }
+.svc-icon {
+  width:56px; height:56px; border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:var(--s5);
+}
+.svc-icon svg { width:28px; height:28px }
+.svc-step {
+  font-family:'Barlow Condensed',sans-serif; font-size:.65rem;
+  font-weight:700; letter-spacing:3px; text-transform:uppercase;
+  color:var(--text-mute); margin-bottom:var(--s2);
+}
+.svc-title {
+  font-family:'Barlow Condensed',sans-serif; font-size:1.2rem;
+  font-weight:700; text-transform:uppercase; color:var(--teal);
+  margin-bottom:var(--s4); line-height:1.15;
+}
+.svc-body { font-size:.88rem; color:var(--text-soft); line-height:1.75 }
+.svc-tags { display:flex; flex-wrap:wrap; gap:var(--s2); margin-top:var(--s5) }
+.svc-tag {
+  font-family:'Barlow Condensed',sans-serif; font-size:.6rem;
+  font-weight:700; letter-spacing:1.5px; text-transform:uppercase;
+  padding:3px 10px; border-radius:100px;
+  border:1px solid var(--border-md); color:var(--text-soft); background:#fff;
+}
+
+/* ══════════════════════════════════
+   ACT IV — EVIDENCE + ROI
+══════════════════════════════════ */
+#act4 { padding:var(--s9) 6%; background:var(--bg-soft) }
+.cases { display:flex; flex-direction:column; gap:var(--s5) }
+.case {
+  display:grid; grid-template-columns:140px 1fr 1fr;
+  background:#fff; border:1px solid var(--border); border-radius:10px;
+  overflow:hidden; box-shadow:var(--sh-sm); transition:box-shadow .3s;
+}
+.case:hover { box-shadow:var(--sh-md) }
+.case-sector {
+  background:var(--teal); display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:var(--s3);
+  padding:var(--s5);
+}
+.case-sector-icon {
+  width:44px; height:44px; border-radius:10px;
+  background:rgba(255,255,255,.1);
+  display:flex; align-items:center; justify-content:center;
+}
+.case-sector-icon svg { width:22px; height:22px; stroke:#fff }
+.case-sector-lbl {
+  font-family:'Barlow Condensed',sans-serif; font-size:.62rem;
+  font-weight:700; letter-spacing:2px; text-transform:uppercase;
+  color:rgba(255,255,255,.6); text-align:center;
+}
+.case-story { padding:var(--s5) var(--s6); border-right:1px solid var(--border) }
+.case-story-title {
+  font-family:'Barlow Condensed',sans-serif; font-size:1.05rem;
+  font-weight:700; text-transform:uppercase; color:var(--teal);
+}
+.case-story-body { font-size:.88rem; color:var(--text-soft); margin-top:var(--s3); line-height:1.7 }
+.case-results { padding:var(--s5) var(--s6); display:flex; flex-direction:column; justify-content:center; gap:var(--s3) }
+.case-kpi { display:flex; align-items:center; gap:var(--s4) }
+.kpi-val {
+  font-family:'Barlow Condensed',sans-serif; font-size:1.8rem;
+  font-weight:800; color:var(--orange); line-height:1; white-space:nowrap;
+}
+.kpi-lbl { font-size:.8rem; color:var(--text-soft); line-height:1.4 }
+
+/* ROI Table */
+.roi-table-wrap {
+  margin-top:var(--s8); overflow-x:auto;
+  border:1px solid var(--border-md); border-radius:8px;
+}
+.roi-table { width:100%; border-collapse:collapse }
+.roi-table th {
+  font-family:'Barlow Condensed',sans-serif; font-size:.65rem;
+  font-weight:700; letter-spacing:3px; text-transform:uppercase;
+  color:var(--text-soft); background:var(--bg);
+  padding:var(--s4) var(--s5); text-align:left;
+  border-bottom:1px solid var(--border-md);
+}
+.roi-table td {
+  padding:var(--s4) var(--s5); font-size:.9rem;
+  color:var(--text-mid); border-bottom:1px solid var(--border);
+}
+.roi-table tr:last-child td { border-bottom:none }
+.roi-table tr:hover td { background:var(--bg-soft) }
+.td-pos { color:var(--c-green); font-weight:700 }
+.td-warn { color:var(--c-amber); font-weight:700 }
+
+/* ══════════════════════════════════
+   ACT V — PROCESS
+══════════════════════════════════ */
+#act5 { padding:var(--s9) 6%; background:#fff }
+.process-steps {
+  display:grid; grid-template-columns:repeat(5,1fr);
+  gap:var(--s4); margin-top:var(--s8); position:relative;
+}
+.process-steps::before {
+  content:''; position:absolute; top:36px; left:10%; right:10%; height:1px;
+  background:linear-gradient(90deg,transparent,var(--border-md),transparent);
+}
+.step-card {
+  text-align:center; padding:var(--s6) var(--s4);
+  background:var(--bg); border:1px solid var(--border); border-radius:8px;
+  transition:box-shadow .3s,transform .3s;
+}
+.step-card:hover { box-shadow:var(--sh-md); transform:translateY(-4px) }
+.step-num-ring {
+  width:52px; height:52px; border-radius:50%;
+  border:2px solid var(--border-md);
+  display:flex; align-items:center; justify-content:center;
+  margin:0 auto var(--s4);
+  font-family:'Barlow Condensed',sans-serif; font-size:1.3rem;
+  font-weight:800; color:var(--teal); background:#fff;
+  transition:border-color .3s,background .3s,color .3s;
+  position:relative; z-index:1;
+}
+.step-card:hover .step-num-ring {
+  border-color:var(--orange); background:var(--orange); color:#fff;
+}
+.step-title {
+  font-family:'Barlow Condensed',sans-serif; font-size:1rem;
+  font-weight:700; text-transform:uppercase; color:var(--teal);
+  margin-bottom:var(--s3);
+}
+.step-body { font-size:.82rem; color:var(--text-soft); line-height:1.6 }
+
+/* ══════════════════════════════════
+   ACT VI — PRICING
+══════════════════════════════════ */
+#act6 { padding:var(--s9) 6%; background:var(--bg) }
+.pricing-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:var(--s5); margin-top:var(--s8); align-items:start;
+}
+.price-card {
+  background:#fff; border:1px solid var(--border); border-radius:10px;
+  padding:var(--s7) var(--s6); position:relative; overflow:hidden;
+  transition:box-shadow .3s,transform .3s;
+}
+.price-card:hover { box-shadow:var(--sh-lg); transform:translateY(-4px) }
+.price-card.featured {
+  border-color:var(--orange);
+  box-shadow:0 0 0 3px rgba(244,121,32,.12), var(--sh-md);
+}
+.price-card.featured::before {
+  content:'MOST POPULAR'; position:absolute; top:var(--s4); right:var(--s4);
+  font-family:'Barlow Condensed',sans-serif; font-size:.6rem; font-weight:700;
+  letter-spacing:2px; background:var(--orange); color:#fff;
+  padding:3px 10px; border-radius:100px;
+}
+.price-tier {
+  font-family:'Barlow Condensed',sans-serif; font-size:.7rem;
+  font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--text-mute);
+}
+.price-name {
+  font-family:'Barlow Condensed',sans-serif; font-size:1.5rem;
+  font-weight:800; text-transform:uppercase; color:var(--teal); margin-top:var(--s2);
+}
+.price-amount {
+  margin-top:var(--s5); padding-top:var(--s5); border-top:1px solid var(--border);
+}
+.price-val {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(1.8rem,3vw,2.6rem); font-weight:800; color:var(--teal);
+}
+.price-period { font-size:.82rem; color:var(--text-soft); margin-left:4px }
+.price-note { font-size:.8rem; color:var(--text-mute); margin-top:var(--s2) }
+.price-features {
+  list-style:none; margin-top:var(--s5);
+  display:flex; flex-direction:column; gap:var(--s3);
+}
+.price-features li {
+  display:flex; align-items:flex-start; gap:var(--s3);
+  font-size:.88rem; color:var(--text-soft);
+}
+.price-check { color:var(--c-green); flex-shrink:0; margin-top:2px }
+.price-cta { margin-top:var(--s6); width:100%; justify-content:center }
+
+/* ══════════════════════════════════
+   ACT VII — TESTIMONIALS
+══════════════════════════════════ */
+#act7 { padding:var(--s9) 6%; background:var(--teal) }
+.testi-grid {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:var(--s5); margin-top:var(--s8);
+}
+.testi-card {
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.1); border-radius:10px;
+  padding:var(--s7) var(--s6);
+  transition:background .3s,box-shadow .3s;
+}
+.testi-card:hover {
+  background:rgba(255,255,255,.1);
+  box-shadow:0 8px 32px rgba(0,0,0,.3);
+}
+.testi-stars { display:flex; gap:4px; margin-bottom:var(--s4) }
+.testi-stars svg { width:14px; height:14px; fill:#f59e0b }
+.testi-text {
+  font-size:.95rem; color:rgba(255,255,255,.8);
+  line-height:1.75; font-style:italic;
+}
+.testi-author { display:flex; align-items:center; gap:var(--s4); margin-top:var(--s5) }
+.testi-avatar {
+  width:40px; height:40px; border-radius:50%;
+  background:rgba(255,255,255,.15);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:1rem; font-weight:700; color:#fff; flex-shrink:0;
+}
+.testi-name {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:.75rem; font-weight:700; letter-spacing:1px;
+  text-transform:uppercase; color:#fff;
+}
+.testi-role { font-size:.75rem; color:rgba(255,255,255,.5); margin-top:2px }
+
+/* ══════════════════════════════════
+   ACT VIII — FAQ
+══════════════════════════════════ */
+#act8 { padding:var(--s9) 6%; background:#fff }
+.faq-list { margin-top:var(--s8); display:flex; flex-direction:column; gap:var(--s3) }
+.faq-item {
+  border:1px solid var(--border); border-radius:8px;
+  overflow:hidden; transition:box-shadow .25s;
+}
+.faq-item:hover { box-shadow:var(--sh-sm) }
+.faq-q {
+  display:flex; align-items:center; justify-content:space-between;
+  gap:var(--s4); padding:var(--s5) var(--s6);
+  background:#fff; cursor:pointer;
+  font-family:'Barlow Condensed',sans-serif; font-size:1rem;
+  font-weight:700; text-transform:uppercase; color:var(--teal);
+  border:none; width:100%; text-align:left;
+}
+.faq-q svg {
+  width:18px; height:18px; flex-shrink:0;
+  transition:transform .35s var(--ease); color:var(--text-mute);
+}
+.faq-item.open .faq-q svg { transform:rotate(45deg) }
+.faq-a {
+  max-height:0; overflow:hidden;
+  transition:max-height .45s var(--ease), padding .35s;
+  background:var(--bg);
+}
+.faq-a-inner {
+  padding:0 var(--s6) var(--s5);
+  font-size:.93rem; color:var(--text-soft); line-height:1.75;
+}
+.faq-item.open .faq-a { max-height:400px }
+
+/* ══════════════════════════════════
+   CTA BANNER
+══════════════════════════════════ */
+#cta-banner {
+  padding:var(--s9) 6%;
+  background:linear-gradient(135deg,var(--teal) 0%,var(--teal-mid) 60%,#004d5c 100%);
+  position:relative; overflow:hidden;
+}
+#cta-banner::before {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+  background-size:48px 48px;
+}
+.cta-inner { max-width:720px; position:relative; z-index:1 }
+.cta-h {
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:clamp(2.2rem,5vw,4rem); font-weight:800;
+  line-height:.95; text-transform:uppercase; color:#fff; letter-spacing:-.02em;
+}
+.cta-h em { font-style:italic; color:var(--orange) }
+.cta-sub { font-size:1.05rem; color:rgba(255,255,255,.7); margin-top:var(--s5); line-height:1.7 }
+.cta-actions { display:flex; gap:var(--s4); flex-wrap:wrap; margin-top:var(--s7) }
+.wa-pulse {
+  position:relative;
+}
+.wa-pulse::after {
+  content:''; position:absolute; inset:-4px; border-radius:8px;
+  background:rgba(34,197,94,.4);
+  animation:pulse-ring 1.8s ease-out infinite;
+  pointer-events:none;
+}
+
+/* ══════════════════════════════════
+   FOOTER
+══════════════════════════════════ */
+footer {
+  background:var(--text); padding:var(--s7) 6%;
+  display:flex; flex-direction:column; gap:var(--s5);
+}
+.footer-top {
+  display:flex; justify-content:space-between; align-items:flex-start;
+  gap:var(--s7); flex-wrap:wrap;
+  padding-bottom:var(--s6); border-bottom:1px solid rgba(255,255,255,.1);
+}
+.footer-brand .nav-mark { font-size:1.1rem }
+.footer-tagline { font-size:.88rem; color:rgba(255,255,255,.4); margin-top:var(--s3); max-width:280px; line-height:1.6 }
+.footer-cols { display:flex; gap:var(--s9); flex-wrap:wrap }
+.footer-col-title {
+  font-family:'Barlow Condensed',sans-serif; font-size:.65rem;
+  font-weight:700; letter-spacing:3px; text-transform:uppercase;
+  color:rgba(255,255,255,.35); margin-bottom:var(--s4);
+}
+.footer-links { list-style:none; display:flex; flex-direction:column; gap:var(--s3) }
+.footer-links a {
+  font-size:.88rem; color:rgba(255,255,255,.55);
+  transition:color .2s;
+}
+.footer-links a:hover { color:#fff }
+.footer-bottom {
+  display:flex; justify-content:space-between; align-items:center;
+  flex-wrap:wrap; gap:var(--s4);
+}
+.footer-copy { font-size:.8rem; color:rgba(255,255,255,.3) }
+.footer-legal { display:flex; gap:var(--s5) }
+.footer-legal a { font-size:.8rem; color:rgba(255,255,255,.3); transition:color .2s }
+.footer-legal a:hover { color:rgba(255,255,255,.6) }
+
+/* ══════════════════════════════════
+   FLOATING WA BUTTON
+══════════════════════════════════ */
+.wa-fab {
+  position:fixed; bottom:var(--s6); right:var(--s6); z-index:400;
+  width:54px; height:54px; border-radius:50%;
+  background:#22c55e; box-shadow:0 6px 24px rgba(34,197,94,.45);
+  display:flex; align-items:center; justify-content:center;
+  transition:transform .25s,box-shadow .25s;
+}
+.wa-fab:hover { transform:scale(1.1); box-shadow:0 10px 32px rgba(34,197,94,.55) }
+.wa-fab svg { width:28px; height:28px; fill:#fff }
+
+/* ══════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════ */
+@media (max-width:1024px) {
+  .services-grid { grid-template-columns:repeat(2,1fr) }
+  .process-steps { grid-template-columns:repeat(3,1fr) }
+  .process-steps::before { display:none }
+  .pricing-grid { grid-template-columns:1fr 1fr }
+  .testi-grid { grid-template-columns:1fr 1fr }
+}
+
+@media (max-width:768px) {
+  .nav-links,
+  .nav-right .btn-outline { display:none }
+  .hamburger { display:flex }
+
+  .prologue-h1 { font-size:clamp(2.4rem,11vw,5rem) }
+
+  .proof-strip {
+    grid-template-columns:repeat(2,1fr);
+  }
+  .proof-cell:nth-child(2) { border-right:none }
+  .proof-cell:nth-child(1),
+  .proof-cell:nth-child(2) { border-bottom:1px solid var(--border) }
+
+  .act1-grid,
+  .act2-grid { grid-template-columns:1fr; gap:var(--s7) }
+
+  .case { grid-template-columns:1fr }
+  .case-sector { flex-direction:row; justify-content:flex-start; padding:var(--s4) var(--s5) }
+  .case-story  { border-right:none; border-bottom:1px solid var(--border) }
+
+  .services-grid { grid-template-columns:1fr }
+  .process-steps { grid-template-columns:1fr 1fr }
+  .pricing-grid  { grid-template-columns:1fr }
+  .testi-grid    { grid-template-columns:1fr }
+
+  .footer-top { flex-direction:column }
+  .footer-cols { gap:var(--s6) }
+}
+
+@media (max-width:480px) {
+  .prologue-actions { flex-direction:column }
+  .cta-actions { flex-direction:column }
+  .process-steps { grid-template-columns:1fr }
+  .proof-strip { grid-template-columns:1fr 1fr }
+}
 </style>
 </head>
 <body>
 
-<svg style="display:none">
-  <symbol id="chk" viewBox="0 0 24 24">
-    <path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-</svg>
+<!-- ══ FLOATING WA BUTTON ══ -->
+<a class="wa-fab" href="https://wa.me/919637439000?text=Hi%20Aditya%2C%20I%20need%20ESG%2FZED%20help" target="_blank" rel="noopener" aria-label="WhatsApp Aditya">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.239a.75.75 0 00.908.908l5.441-1.484A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.709 9.709 0 01-4.952-1.352l-.355-.212-3.68 1.003 1.003-3.68-.212-.355A9.709 9.709 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+</a>
 
-<nav id="main-nav">
-  <div class="nav-mark" style="font-family:'Barlow Condensed'; font-weight:800; font-size:1.2rem; text-transform:uppercase; color:var(--teal);">ADITYA <span style="color:var(--orange)">CHAUDHARY</span></div>
+<!-- ══ NAV ══ -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <a href="/" class="nav-mark">Vendor<span>Verify</span>.in</a>
+  <ul class="nav-links">
+    <li><a href="#act1">The Problem</a></li>
+    <li><a href="#act3">Services</a></li>
+    <li><a href="#act4">Results</a></li>
+    <li><a href="#act6">Pricing</a></li>
+    <li><a href="#act8">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="#act6" class="btn btn-outline" style="padding:8px 16px;font-size:.68rem;letter-spacing:2px;">View Plans</a>
+    <a href="https://wa.me/919637439000" target="_blank" rel="noopener" class="nav-cta">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.239a.75.75 0 00.908.908l5.441-1.484A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      WhatsApp
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-<header id="prologue" class="section" style="min-height:100vh; display:flex; flex-direction:column; justify-content:center; background:linear-gradient(150deg,#fff 0%,#eef7f9 100%);">
-  <div class="reveal" style="transition-delay: 0.2s">
-    <div class="t-label" style="margin-bottom:var(--s4)">ESG & ZED Certified Facilitator</div>
-    <h1 class="t-headline">
-      <span class="h1-fire">Scale Fast.</span><br>
-      <span class="h1-dark">Stay Green.</span>
-    </h1>
-    <p style="max-width:500px; margin-top:var(--s6); color:var(--text-soft); font-style:italic;">India's manufacturing-native ESG consultant for MSMEs. Cut costs 15–20% and unlock export markets.</p>
-    
-    <div style="display:flex; align-items:center; gap:var(--s3); margin-top:var(--s5);">
-      <div class="urgency-dot"></div>
-      <span style="font-family:'Barlow Condensed'; font-size:.7rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--orange);">Limited Audit Slots for Q2 2026</span>
-    </div>
+<!-- ══ MOBILE MENU ══ -->
+<div class="mob-menu" id="mob-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <a href="#act1" class="mob-link">The Problem</a>
+  <a href="#act3" class="mob-link">Services</a>
+  <a href="#act4" class="mob-link">Results</a>
+  <a href="#act6" class="mob-link">Pricing</a>
+  <a href="#act8" class="mob-link">FAQ</a>
+  <a href="https://wa.me/919637439000" class="mob-cta-link" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.239a.75.75 0 00.908.908l5.441-1.484A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+    WhatsApp Aditya
+  </a>
+</div>
 
-    <div style="margin-top:var(--s7);">
-      <a href="https://wa.me/919637439000" class="btn btn-wa">
-        <svg><use xlink:href="#chk"></use></svg>
-        Get Free MSME Audit
-      </a>
-    </div>
+<!-- ══ PROLOGUE / HERO ══ -->
+<section id="prologue" aria-label="Hero">
+  <div class="prologue-eyebrow">
+    <div class="pro-line"></div>
+    <span class="t-label">ESG · ZED · BRSR · GRI</span>
   </div>
 
-  <div class="proof-strip reveal" style="transition-delay: 0.8s">
-    <div class="proof-cell">
-      <div style="font-family:'Barlow Condensed'; font-size:2.2rem; font-weight:800; color:var(--teal);">15+</div>
-      <div class="t-label" style="font-size:0.6rem; letter-spacing:2px;">Companies</div>
-    </div>
-    <div class="proof-cell">
-      <div style="font-family:'Barlow Condensed'; font-size:2.2rem; font-weight:800; color:var(--teal);">20%</div>
-      <div class="t-label" style="font-size:0.6rem; letter-spacing:2px;">Cost Cut</div>
-    </div>
-    <div class="proof-cell">
-      <div style="font-family:'Barlow Condensed'; font-size:2.2rem; font-weight:800; color:var(--teal);">ZED</div>
-      <div class="t-label" style="font-size:0.6rem; letter-spacing:2px;">Certified</div>
-    </div>
-    <div class="proof-cell">
-      <div style="font-family:'Barlow Condensed'; font-size:2.2rem; font-weight:800; color:var(--teal);">GRI</div>
-      <div class="t-label" style="font-size:0.6rem; letter-spacing:2px;">Standard</div>
-    </div>
-  </div>
-</header>
+  <h1 class="prologue-h1">
+    <span class="h1-ghost">Sustainability</span>
+    <span class="h1-fire">Without</span>
+    <span class="h1-dark">the Guesswork</span>
+  </h1>
 
-<section id="act1" class="section" style="background:#fff;">
-  <div class="reveal">
-    <div class="t-label">Act I: The Wall</div>
-    <h2 class="t-headline" style="font-size:3rem; margin:var(--s4) 0;">The Global Mandate</h2>
-    <div class="diff-box" style="background:var(--teal); color:#fff; border:none; padding:var(--s7);">
-      <p class="diff-inner" style="color:rgba(255,255,255,0.8); font-size:1.2rem;">"MSMEs that ignore ESG today will be filtered out of global supply chains by 2027. Sustainability is no longer a choice—it is your license to operate."</p>
+  <p class="prologue-sub">
+    India's manufacturing-native ESG consultant helping MSMEs cut costs <strong>15–20%</strong>,
+    earn <em class="accent">ZED certification</em>, and open export doors — with zero jargon.
+  </p>
+
+  <div class="urgency-strip" role="status">
+    <span class="urgency-dot" aria-hidden="true"></span>
+    <span class="urgency-text">Limited slots · April–June 2025 cohort</span>
+  </div>
+
+  <div class="prologue-actions">
+    <a href="https://wa.me/919637439000?text=Hi%20Aditya%2C%20I%27d%20like%20a%20free%20ESG%20gap%20analysis" target="_blank" rel="noopener" class="btn btn-primary">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.239a.75.75 0 00.908.908l5.441-1.484A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      Free Gap Analysis
+    </a>
+    <a href="#act3" class="btn btn-outline">Explore Services</a>
+  </div>
+
+  <div class="proof-strip" role="list">
+    <div class="proof-cell" role="listitem">
+      <div class="proof-icon" style="background:rgba(244,121,32,.1);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="proof-num">15+</div>
+      <div class="proof-lbl">MSMEs Transformed</div>
+    </div>
+    <div class="proof-cell" role="listitem">
+      <div class="proof-icon" style="background:rgba(0,62,72,.08);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      </div>
+      <div class="proof-num">15–20%</div>
+      <div class="proof-lbl">Average Cost Reduction</div>
+    </div>
+    <div class="proof-cell" role="listitem">
+      <div class="proof-icon" style="background:rgba(22,163,74,.1);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <div class="proof-num">ZED</div>
+      <div class="proof-lbl">Certified Facilitator</div>
+    </div>
+    <div class="proof-cell" role="listitem">
+      <div class="proof-icon" style="background:rgba(54,115,148,.1);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--steel)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+      </div>
+      <div class="proof-num">3</div>
+      <div class="proof-lbl">Years Field Experience</div>
     </div>
   </div>
 </section>
 
-<script>
-(function() {
-  "use strict";
+<!-- ══ CHAPTER BREAK 01 ══ -->
+<div class="chapter-break" aria-hidden="true">
+  <span class="chapter-num">01 / The Problem</span>
+  <div class="chapter-rule"></div>
+</div>
 
-  const observer = new IntersectionObserver((entries) => {
+<!-- ══ ACT I — THE WALL ══ -->
+<section id="act1" aria-label="The Problem">
+  <div class="act1-grid">
+    <div class="reveal">
+      <p class="t-label">Why MSMEs Lose Contracts</p>
+      <h2 class="t-headline" style="margin-top:var(--s3)">The compliance wall is real — and it's costing you orders</h2>
+      <ul class="pain-list" role="list">
+        <li class="pain-item">
+          <div class="pain-icon" style="background:rgba(220,38,38,.08);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-red)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <p class="pain-text"><strong>Large buyers now require ESG/BRSR documentation</strong> before vendor empanelment — and most MSMEs have none.</p>
+        </li>
+        <li class="pain-item">
+          <div class="pain-icon" style="background:rgba(220,38,38,.08);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-red)" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <p class="pain-text"><strong>EU Carbon Border Adjustment Mechanism (CBAM)</strong> will levy tariffs on your exports if you can't prove low-carbon credentials.</p>
+        </li>
+        <li class="pain-item">
+          <div class="pain-icon" style="background:rgba(217,119,6,.1);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-amber)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <p class="pain-text"><strong>ZED certification unlocks government incentives</strong> and PSU contracts — yet only a fraction of eligible MSMEs have applied.</p>
+        </li>
+        <li class="pain-item">
+          <div class="pain-icon" style="background:rgba(217,119,6,.1);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-amber)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <p class="pain-text"><strong>Generic consultants don't understand factory floors.</strong> Reports full of jargon, zero implementation support.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="reveal d2">
+      <div class="quote-block">
+        <div class="quote-accent"></div>
+        <p class="quote-text">"We lost a ₹40 lakh export order because we couldn't produce an ESG summary. That's when I knew this wasn't optional anymore."</p>
+        <cite class="quote-cite">— MSME Owner, Faridabad Auto-Components</cite>
+        <div class="diff-box">
+          <p class="diff-inner">This story repeats across Haryana, Punjab, and Gujarat. The difference between MSMEs that grow internationally and those that stagnate isn't product quality — it's documented sustainability credentials.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHAPTER BREAK 02 ══ -->
+<div class="chapter-break" aria-hidden="true">
+  <span class="chapter-num">02 / The Guide</span>
+  <div class="chapter-rule"></div>
+</div>
+
+<!-- ══ ACT II — THE GUIDE ══ -->
+<section id="act2" aria-label="About Aditya">
+  <div class="act2-grid">
+    <div class="reveal">
+      <p class="t-label">Your Guide</p>
+      <h2 class="t-headline" style="margin-top:var(--s3)">Aditya Chaudhary — <em class="accent">Built</em> on factory floors</h2>
+      <p class="story-p">I didn't learn ESG in a boardroom. I learned it walking through foundries, garment units, and chemical plants — watching owners struggle with compliance they didn't choose but couldn't avoid.</p>
+      <p class="story-p">After 3 years working directly with 15+ Indian MSMEs, I built a system that makes ESG <strong>practical, affordable, and results-driven</strong>. Not a 200-page report. A roadmap your team can actually execute.</p>
+      <div class="cred-stack">
+        <div class="cred-pill">
+          <div class="cred-dot-box" style="background:rgba(22,163,74,.1);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <span>ZED Certified Facilitator — Ministry of MSME</span>
+          <span class="cred-badge">Govt. Verified</span>
+        </div>
+        <div class="cred-pill">
+          <div class="cred-dot-box" style="background:rgba(2,132,199,.1);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-sky)" stroke-width="2.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+          </div>
+          <span>GRI Standards-Aligned Reporting</span>
+          <span class="cred-badge">International</span>
+        </div>
+        <div class="cred-pill">
+          <div class="cred-dot-box" style="background:rgba(244,121,32,.1);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span>BRSR Compliance (SEBI Framework)</span>
+          <span class="cred-badge">SEBI</span>
+        </div>
+        <div class="cred-pill">
+          <div class="cred-dot-box" style="background:rgba(124,58,237,.1);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-purple)" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <span>3 Years · 15+ Manufacturing MSMEs</span>
+          <span class="cred-badge">Field Proven</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="metrics-col reveal d2" id="metrics-col">
+      <div class="metric-card">
+        <div class="metric-icon" style="background:rgba(244,121,32,.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+        </div>
+        <div>
+          <div class="metric-big">₹18L</div>
+          <div class="metric-lbl">Average annual savings unlocked per MSME client</div>
+          <div class="metric-bar"><div class="metric-bar-fill" data-w="78"></div></div>
+        </div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon" style="background:rgba(22,163,74,.1);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div>
+          <div class="metric-big">100%</div>
+          <div class="metric-lbl">ZED certification success rate for clients who complete the programme</div>
+          <div class="metric-bar"><div class="metric-bar-fill" data-w="100"></div></div>
+        </div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon" style="background:rgba(0,62,72,.08);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div>
+          <div class="metric-big">15+</div>
+          <div class="metric-lbl">Manufacturing MSMEs across Haryana, Punjab, Gujarat</div>
+          <div class="metric-bar"><div class="metric-bar-fill" data-w="55"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHAPTER BREAK 03 ══ -->
+<div class="chapter-break" aria-hidden="true">
+  <span class="chapter-num">03 / Services</span>
+  <div class="chapter-rule"></div>
+</div>
+
+<!-- ══ ACT III — SERVICES ══ -->
+<section id="act3" aria-label="Services">
+  <div class="reveal">
+    <p class="t-label">What I Do</p>
+    <h2 class="t-headline" style="margin-top:var(--s3)">Six ways I transform your MSME</h2>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card reveal d1">
+      <div class="svc-top-bar" style="background:linear-gradient(90deg,var(--orange),var(--ember))"></div>
+      <div class="svc-icon" style="background:rgba(244,121,32,.1);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+      </div>
+      <p class="svc-step">Service 01</p>
+      <h3 class="svc-title">ZED Certification<br>Fast-Track</h3>
+      <p class="svc-body">End-to-end ZED application support — from readiness audit to Bronze/Silver/Gold certification. I've guided every client to success on first attempt.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">Application Filing</span>
+        <span class="svc-tag">Gap Assessment</span>
+        <span class="svc-tag">Incentives</span>
+      </div>
+    </div>
+    <div class="svc-card reveal d2">
+      <div class="svc-top-bar" style="background:linear-gradient(90deg,var(--teal),var(--steel))"></div>
+      <div class="svc-icon" style="background:rgba(0,62,72,.08);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+      </div>
+      <p class="svc-step">Service 02</p>
+      <h3 class="svc-title">ESG &amp; BRSR<br>Reporting</h3>
+      <p class="svc-body">GRI-aligned ESG reports and SEBI BRSR disclosures that satisfy both domestic buyers and international importers. Clean, credible, buyer-ready.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">GRI Standards</span>
+        <span class="svc-tag">BRSR SEBI</span>
+        <span class="svc-tag">Export-Ready</span>
+      </div>
+    </div>
+    <div class="svc-card reveal d3">
+      <div class="svc-top-bar" style="background:linear-gradient(90deg,var(--c-green),var(--c-teal2))"></div>
+      <div class="svc-icon" style="background:rgba(22,163,74,.1);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-green)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+      </div>
+      <p class="svc-step">Service 03</p>
+      <h3 class="svc-title">Operational Cost<br>Reduction</h3>
+      <p class="svc-body">Energy audits, waste mapping, and process optimisation that average 15–20% cost reductions. Sustainability that pays for itself in Year 1.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">Energy Audit</span>
+        <span class="svc-tag">Waste Mapping</span>
+        <span class="svc-tag">ROI Tracking</span>
+      </div>
+    </div>
+    <div class="svc-card reveal d1">
+      <div class="svc-top-bar" style="background:linear-gradient(90deg,var(--c-sky),var(--steel))"></div>
+      <div class="svc-icon" style="background:rgba(2,132,199,.1);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-sky)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <p class="svc-step">Service 04</p>
+      <h3 class="svc-title">Export Market<br>Compliance</h3>
+      <p class="svc-body">CBAM readiness, EU Taxonomy alignment, and supply-chain due-diligence documentation that international buyers require before placing orders.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">CBAM</span>
+        <span class="svc-tag">EU Taxonomy</span>
+        <span class="svc-tag">Supply Chain</span>
+      </div>
+    </div>
+    <div class="svc-card reveal d2">
+      <div class="svc-top-bar" style="background:linear-gradient(90deg,var(--c-purple),var(--c-sky))"></div>
+      <div class="svc-icon" style="background:rgba(124,58,237,.1);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-purple)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <p class="svc-step">Service 05</p>
+      <h3 class="svc-title">Vendor Risk<br>Intelligence</h3>
+      <p class="svc-body">Proprietary FLAGO™ risk scoring model that verifies supplier ESG credentials for international buyers sourcing from India. Know before you commit.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">FLAGO™ Score</span>
+        <span class="svc-tag">Due Diligence</span>
+        <span class="svc-tag">Supplier Audit</span>
+      </div>
+    </div>
+    <div class="svc-card reveal d3">
+      <div class="svc-top-bar" style="background:linear-gradient(90deg,var(--c-amber),var(--orange))"></div>
+      <div class="svc-icon" style="background:rgba(217,119,6,.1);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--c-amber)" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <p class="svc-step">Service 06</p>
+      <h3 class="svc-title">Team ESG<br>Capacity Building</h3>
+      <p class="svc-body">Workshop-based training for your operations and management team. Embed a sustainability culture that outlasts any single consultant engagement.</p>
+      <div class="svc-tags">
+        <span class="svc-tag">Workshops</span>
+        <span class="svc-tag">SOP Development</span>
+        <span class="svc-tag">Implementation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHAPTER BREAK 04 ══ -->
+<div class="chapter-break" aria-hidden="true">
+  <span class="chapter-num">04 / Evidence</span>
+  <div class="chapter-rule"></div>
+</div>
+
+<!-- ══ ACT IV — EVIDENCE ══ -->
+<section id="act4" aria-label="Results and Case Studies">
+  <div class="reveal">
+    <p class="t-label">Proof Over Promises</p>
+    <h2 class="t-headline" style="margin-top:var(--s3)">Real MSMEs. Real numbers.</h2>
+  </div>
+
+  <div class="cases" style="margin-top:var(--s8);">
+
+    <div class="case reveal d1">
+      <div class="case-sector">
+        <div class="case-sector-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10" stroke="#fff"/><path d="M8 12h8M12 8v8" stroke="#fff"/></svg>
+        </div>
+        <span class="case-sector-lbl">Auto<br>Components</span>
+      </div>
+      <div class="case-story">
+        <h3 class="case-story-title">Faridabad Tier-2 Supplier</h3>
+        <p class="case-story-body">A 45-person auto-components manufacturer was consistently losing Tier-1 bids due to absent ESG documentation. Within 6 months, we delivered full ZED Bronze certification and a BRSR-aligned supplier profile.</p>
+      </div>
+      <div class="case-results">
+        <div class="case-kpi">
+          <span class="kpi-val">₹22L</span>
+          <span class="kpi-lbl">New annual contracts won<br>post-certification</span>
+        </div>
+        <div class="case-kpi">
+          <span class="kpi-val">17%</span>
+          <span class="kpi-lbl">Energy cost reduction<br>in Year 1</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="case reveal d2">
+      <div class="case-sector">
+        <div class="case-sector-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#fff"/><polyline points="9 22 9 12 15 12 15 22" stroke="#fff"/></svg>
+        </div>
+        <span class="case-sector-lbl">Garment<br>Export</span>
+      </div>
+      <div class="case-story">
+        <h3 class="case-story-title">Ludhiana Garment Exporter</h3>
+        <p class="case-story-body">A garment exporter facing EU buyer audit pressure needed CBAM readiness and a GRI-lite sustainability report within 60 days. Delivered on time; buyer extended contract for 3 more seasons.</p>
+      </div>
+      <div class="case-results">
+        <div class="case-kpi">
+          <span class="kpi-val">3×</span>
+          <span class="kpi-lbl">Contract seasons<br>renewed by EU buyer</span>
+        </div>
+        <div class="case-kpi">
+          <span class="kpi-val">60d</span>
+          <span class="kpi-lbl">Report delivered<br>on deadline</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="case reveal d3">
+      <div class="case-sector">
+        <div class="case-sector-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#fff"/></svg>
+        </div>
+        <span class="case-sector-lbl">Chemical<br>Industry</span>
+      </div>
+      <div class="case-story">
+        <h3 class="case-story-title">Gujarat Chemical MSME</h3>
+        <p class="case-story-body">A chemical MSME needed PSU vendor empanelment. ZED Silver certification and waste-reduction audit unlocked ₹15L in government incentives and two new PSU contracts.</p>
+      </div>
+      <div class="case-results">
+        <div class="case-kpi">
+          <span class="kpi-val">₹15L</span>
+          <span class="kpi-lbl">Government incentives<br>unlocked</span>
+        </div>
+        <div class="case-kpi">
+          <span class="kpi-val">2</span>
+          <span class="kpi-lbl">New PSU contracts<br>awarded</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ROI Table -->
+  <div class="reveal" style="margin-top:var(--s9);">
+    <p class="t-label">ROI Framework</p>
+    <h2 class="t-headline" style="margin-top:var(--s3);margin-bottom:var(--s6);">What compliance costs vs. what it earns</h2>
+    <div class="roi-table-wrap">
+      <table class="roi-table" aria-label="ROI comparison table">
+        <thead>
+          <tr>
+            <th>Compliance Action</th>
+            <th>Typical Investment</th>
+            <th>Typical Return</th>
+            <th>Payback Period</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ZED Bronze Certification</td>
+            <td>₹80,000–1.2L</td>
+            <td class="td-pos">₹5–15L incentives + new contracts</td>
+            <td>3–6 months</td>
+          </tr>
+          <tr>
+            <td>BRSR / GRI ESG Report</td>
+            <td>₹60,000–1.5L</td>
+            <td class="td-pos">Unlock export orders ₹10–50L+</td>
+            <td>1–4 months</td>
+          </tr>
+          <tr>
+            <td>Energy &amp; Waste Audit</td>
+            <td>₹40,000–80,000</td>
+            <td class="td-pos">15–20% annual savings on utilities</td>
+            <td>2–5 months</td>
+          </tr>
+          <tr>
+            <td>CBAM Readiness Package</td>
+            <td>₹1–2L</td>
+            <td class="td-pos">Protect existing EU export revenue</td>
+            <td>Immediate</td>
+          </tr>
+          <tr>
+            <td>No action taken</td>
+            <td>₹0</td>
+            <td class="td-warn">Risk: lost contracts, EU tariffs, PSU exclusion</td>
+            <td class="td-warn">Compounding loss</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHAPTER BREAK 05 ══ -->
+<div class="chapter-break" aria-hidden="true">
+  <span class="chapter-num">05 / Process</span>
+  <div class="chapter-rule"></div>
+</div>
+
+<!-- ══ ACT V — PROCESS ══ -->
+<section id="act5" aria-label="How it works">
+  <div class="reveal">
+    <p class="t-label">How It Works</p>
+    <h2 class="t-headline" style="margin-top:var(--s3)">From first call to certified in 5 steps</h2>
+  </div>
+  <div class="process-steps">
+    <div class="step-card reveal d1">
+      <div class="step-num-ring">1</div>
+      <h3 class="step-title">Free Gap Call</h3>
+      <p class="step-body">30-minute WhatsApp or video call. I assess your current ESG position and identify the highest-impact actions for your specific situation.</p>
+    </div>
+    <div class="step-card reveal d2">
+      <div class="step-num-ring">2</div>
+      <h3 class="step-title">Baseline Audit</h3>
+      <p class="step-body">On-site or remote audit covering energy, waste, governance, and supply chain. Benchmarked against ZED and GRI criteria.</p>
+    </div>
+    <div class="step-card reveal d3">
+      <div class="step-num-ring">3</div>
+      <h3 class="step-title">Roadmap &amp; Proposal</h3>
+      <p class="step-body">A 90-day action plan with clear milestones, responsible owners, and projected ROI. No jargon. No vague commitments.</p>
+    </div>
+    <div class="step-card reveal d1">
+      <div class="step-num-ring">4</div>
+      <h3 class="step-title">Implementation</h3>
+      <p class="step-body">Hands-on support through process changes, documentation, team training, and certification filing. I stay until it's done.</p>
+    </div>
+    <div class="step-card reveal d2">
+      <div class="step-num-ring">5</div>
+      <h3 class="step-title">Certified &amp; Growing</h3>
+      <p class="step-body">Certification in hand, ESG report delivered, and your team equipped to maintain standards. Ongoing retainer available.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHAPTER BREAK 06 ══ -->
+<div class="chapter-break" aria-hidden="true">
+  <span class="chapter-num">06 / Pricing</span>
+  <div class="chapter-rule"></div>
+</div>
+
+<!-- ══ ACT VI — PRICING ══ -->
+<section id="act6" aria-label="Pricing">
+  <div class="reveal">
+    <p class="t-label">Transparent Pricing</p>
+    <h2 class="t-headline" style="margin-top:var(--s3)">Choose the right engagement</h2>
+    <p class="t-body" style="margin-top:var(--s4);max-width:560px;">All packages include a free 30-minute gap analysis call. Custom enterprise pricing available for groups of 3+ MSMEs or large units.</p>
+  </div>
+  <div class="pricing-grid">
+
+    <div class="price-card reveal d1">
+      <p class="price-tier">Starter</p>
+      <h3 class="price-name">ESG Essentials</h3>
+      <div class="price-amount">
+        <span class="price-val">₹75,000</span>
+        <span class="price-period">one-time</span>
+        <p class="price-note">Ideal for: First-time ESG documentation</p>
+      </div>
+      <ul class="price-features">
+        <li><span class="price-check">✓</span> Baseline ESG gap assessment</li>
+        <li><span class="price-check">✓</span> GRI-lite sustainability report (10–15 pages)</li>
+        <li><span class="price-check">✓</span> BRSR checklist &amp; readiness score</li>
+        <li><span class="price-check">✓</span> 1 buyer-ready ESG summary PDF</li>
+        <li><span class="price-check">✓</span> 2 revision rounds</li>
+      </ul>
+      <a href="https://wa.me/919637439000?text=Hi%20Aditya%2C%20I%27m%20interested%20in%20the%20ESG%20Essentials%20package" target="_blank" rel="noopener" class="btn btn-outline price-cta">Get Started</a>
+    </div>
+
+    <div class="price-card featured reveal d2">
+      <p class="price-tier">Most Popular</p>
+      <h3 class="price-name">ZED + ESG Complete</h3>
+      <div class="price-amount">
+        <span class="price-val">₹1,80,000</span>
+        <span class="price-period">all-inclusive</span>
+        <p class="price-note">Ideal for: Export-ready certification</p>
+      </div>
+      <ul class="price-features">
+        <li><span class="price-check">✓</span> Everything in ESG Essentials</li>
+        <li><span class="price-check">✓</span> Full ZED application &amp; filing support</li>
+        <li><span class="price-check">✓</span> Energy &amp; waste audit (on-site)</li>
+        <li><span class="price-check">✓</span> CBAM readiness assessment</li>
+        <li><span class="price-check">✓</span> Team training workshop (half-day)</li>
+        <li><span class="price-check">✓</span> 90-day implementation support</li>
+        <li><span class="price-check">✓</span> Priority WhatsApp access</li>
+      </ul>
+      <a href="https://wa.me/919637439000?text=Hi%20Aditya%2C%20I%27m%20interested%20in%20the%20ZED%20%2B%20ESG%20Complete%20package" target="_blank" rel="noopener" class="btn btn-primary price-cta">Get Started</a>
+    </div>
+
+    <div class="price-card reveal d3">
+      <p class="price-tier">Enterprise</p>
+      <h3 class="price-name">Annual Retainer</h3>
+      <div class="price-amount">
+        <span class="price-val">Custom</span>
+        <p class="price-note">Ideal for: Ongoing compliance &amp; reporting</p>
+      </div>
+      <ul class="price-features">
+        <li><span class="price-check">✓</span> Everything in ZED + ESG Complete</li>
+        <li><span class="price-check">✓</span> Quarterly ESG performance reviews</li>
+        <li><span class="price-check">✓</span> Annual GRI report update</li>
+        <li><span class="price-check">✓</span> Regulatory change monitoring</li>
+        <li><span class="price-check">✓</span> Dedicated account manager</li>
+        <li><span class="price-check">✓</span> Group MSME pricing available</li>
+      </ul>
+      <a href="https://wa.me/919637439000?text=Hi%20Aditya%2C%20I%27d%20like%20to%20discuss%20an%20annual%20retainer" target="_blank" rel="noopener" class="btn btn-teal price-cta">Contact for Pricing</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CHAPTER BREAK 07 ══ -->
+<div class="chapter-break" aria-hidden="true">
+  <span class="chapter-num">07 / Testimonials</span>
+  <div class="chapter-rule"></div>
+</div>
+
+<!-- ══ ACT VII — TESTIMONIALS ══ -->
+<section id="act7" aria-label="Client Testimonials">
+  <div class="reveal">
+    <p class="t-label" style="color:rgba(255,255,255,.5);">What Clients Say</p>
+    <h2 class="t-headline" style="color:#fff;margin-top:var(--s3);">Trusted by manufacturers across India</h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal d1">
+      <div class="testi-stars">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <p class="testi-text">"Aditya doesn't just write reports — he sits with you, understands your floor operations, and builds a plan that your team can actually follow. We got ZED Bronze in 5 months and reduced our power bill by ₹1.4L in the first year."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">RK</div>
+        <div>
+          <p class="testi-name">Rajesh Kumar</p>
+          <p class="testi-role">MD, Precision Auto Parts — Faridabad</p>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal d2">
+      <div class="testi-stars">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <p class="testi-text">"Our European buyer asked for sustainability documentation with 45 days notice. I reached out to Aditya and he delivered a full GRI-aligned report in under 60 days. The buyer not only renewed but increased order volume."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">PS</div>
+        <div>
+          <p class="testi-name">Paramjit Singh</p>
+          <p class="testi-role">Proprietor, Ludhiana Garment Exports</p>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal d3">
+      <div class="testi-stars">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <p class="testi-text">"We were sceptical about ESG being relevant to a 30-person chemical unit. Aditya showed us the ZED incentives we were leaving on the table. ₹15 lakhs in government credits later, we're believers. ROI was clear from day one."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">NP</div>
+        <div>
+          <p class="testi-name">Nilesh Patel</p>
+          <p class="testi-role">Director, Gujarat Specialty Chemicals</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CHAPTER BREAK 08 ══ -->
+<div class="chapter-break" aria-hidden="true">
+  <span class="chapter-num">08 / FAQ</span>
+  <div class="chapter-rule"></div>
+</div>
+
+<!-- ══ ACT VIII — FAQ ══ -->
+<section id="act8" aria-label="Frequently Asked Questions">
+  <div class="reveal">
+    <p class="t-label">Common Questions</p>
+    <h2 class="t-headline" style="margin-top:var(--s3);">Straight answers, no jargon</h2>
+  </div>
+  <div class="faq-list" role="list">
+
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        My MSME has less than 50 employees. Is ESG really relevant to me?
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a" role="region">
+        <p class="faq-a-inner">Yes — and increasingly urgently so. Large manufacturers (Tata, Mahindra, Reliance, global exporters) now require ESG compliance from their entire supply chain. If you supply to any large Indian company or export to the EU/US, ESG documentation is already or soon will be mandatory. The ZED scheme from Ministry of MSME specifically targets small units with incentives that often exceed the cost of certification.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        What exactly is the FLAGO™ risk scoring model?
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a" role="region">
+        <p class="faq-a-inner">FLAGO™ stands for Financial, Legal, Audit, Governance, and Operational risk. It's a proprietary scoring framework I developed specifically for Indian MSME supplier assessment. It combines public data, audit findings, and ESG disclosures into a single credibility score (0–100) that international buyers can use to qualify Indian suppliers. Think of it as a CIBIL score for your ESG and compliance health. The full methodology is available on request to prospective clients and buyers.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        How long does ZED certification take?
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a" role="region">
+        <p class="faq-a-inner">ZED Bronze typically takes 4–6 months from initial audit to certification, assuming the MSME is reasonably cooperative and responsive to documentation requests. Silver and Gold add 2–4 months each. I've never had a client take longer than 8 months for Bronze when following my structured programme. Timeline depends significantly on how quickly you implement recommended process changes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        Can you work with MSMEs outside Haryana?
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a" role="region">
+        <p class="faq-a-inner">Yes. While I'm based in Sonipat, Haryana, I work with MSMEs across India. For clients in Punjab, Rajasthan, Uttar Pradesh, and Gujarat, I typically conduct one on-site audit visit and manage the rest remotely via WhatsApp, video calls, and document sharing. Travel costs for on-site visits outside Haryana/Delhi NCR are charged at actuals.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        What's the difference between BRSR and GRI reporting?
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a" role="region">
+        <p class="faq-a-inner">BRSR (Business Responsibility and Sustainability Reporting) is mandatory for SEBI-listed companies and increasingly requested by large Indian corporates from their suppliers. GRI (Global Reporting Initiative) is the international standard used by EU/US buyers and multinational corporations. For export-oriented MSMEs I recommend a combined approach: GRI-aligned content formatted to also satisfy BRSR requirements, so one report serves both domestic and international buyers.</p>
+      </div>
+    </div>
+
+    <div class="faq-item" role="listitem">
+      <button class="faq-q" aria-expanded="false">
+        Do you offer payment plans?
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq-a" role="region">
+        <p class="faq-a-inner">Yes. For the ZED + ESG Complete package, I offer a 40/40/20 payment structure: 40% on engagement, 40% at interim milestone (audit completion), and 20% on certification. For the ESG Essentials package, I offer a 60/40 split. I also accept MSME-backed credit facilities and can provide documentation for government grant applications that can partially offset consulting costs.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ══ -->
+<section id="cta-banner" aria-label="Call to action">
+  <div class="cta-inner reveal">
+    <p class="t-label" style="color:rgba(255,255,255,.4);">Ready to Start?</p>
+    <h2 class="cta-h">
+      Your next export order<br>starts with a <em>30-minute call.</em>
+    </h2>
+    <p class="cta-sub">Free gap analysis. No commitment. I'll tell you exactly where you stand and what it would take to get certified — whether you hire me or not.</p>
+    <div class="cta-actions">
+      <div class="wa-pulse">
+        <a href="https://wa.me/919637439000?text=Hi%20Aditya%2C%20I%27d%20like%20a%20free%20ESG%20gap%20analysis%20call" target="_blank" rel="noopener" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.854L.054 23.239a.75.75 0 00.908.908l5.441-1.484A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          WhatsApp for Free Call
+        </a>
+      </div>
+      <a href="mailto:aditya.riskauditor@gmail.com" class="btn btn-ghost-light">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Email Aditya
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-mark" style="color:#fff;">Vendor<span>Verify</span>.in</div>
+      <p class="footer-tagline">India's manufacturing-native ESG &amp; ZED consulting practice. Helping MSMEs grow, comply, and export.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <p class="footer-col-title">Services</p>
+        <ul class="footer-links">
+          <li><a href="#act3">ZED Certification</a></li>
+          <li><a href="#act3">ESG &amp; BRSR Reporting</a></li>
+          <li><a href="#act3">Cost Reduction Audit</a></li>
+          <li><a href="#act3">CBAM Readiness</a></li>
+          <li><a href="#act3">Vendor Risk (FLAGO™)</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/919637439000" target="_blank" rel="noopener">+91 96374 39000</a></li>
+          <li><a href="mailto:aditya.riskauditor@gmail.com">aditya.riskauditor@gmail.com</a></li>
+          <li><a href="#act5">How It Works</a></li>
+          <li><a href="#act6">Pricing</a></li>
+          <li><a href="#act8">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 VendorVerify.in · Aditya Chaudhary · Sonipat, Haryana, India</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════
+   JAVASCRIPT — ALL BUGS FIXED
+══════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── 1. NAV SCROLL STATE ── */
+  const nav = document.getElementById('main-nav');
+  function onScroll() {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // run on load
+
+  /* ── 2. HAMBURGER / MOBILE MENU ──
+     FIX: mob-menu is always display:flex in CSS, toggled via opacity+pointer-events only.
+     No JS style manipulation needed — just toggle .open class.
+  ── */
+  const hamburger = document.getElementById('hamburger');
+  const mobMenu   = document.getElementById('mob-menu');
+  const mobLinks  = mobMenu.querySelectorAll('a');
+  let menuOpen = false;
+
+  function openMenu() {
+    menuOpen = true;
+    hamburger.classList.add('open');
+    hamburger.setAttribute('aria-expanded', 'true');
+    mobMenu.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    menuOpen = false;
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', () => menuOpen ? closeMenu() : openMenu());
+
+  // Close when any link is clicked
+  mobLinks.forEach(link => link.addEventListener('click', closeMenu));
+
+  // Close on Escape key
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && menuOpen) closeMenu(); });
+
+  /* ── 3. SCROLL REVEAL ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('in');
+        revealObs.unobserve(entry.target); // fire once
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
 
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  reveals.forEach(el => revealObs.observe(el));
 
-  window.addEventListener('scroll', () => {
-    const nav = document.getElementById('main-nav');
-    if (window.scrollY > 50) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
+  /* ── 4. METRIC BAR ANIMATION ──
+     FIX: bars animate when their parent .reveal gets .in class.
+     Uses MutationObserver on each metric card.
+  ── */
+  document.querySelectorAll('.metric-bar-fill').forEach(bar => {
+    const card = bar.closest('.reveal');
+    if (!card) return;
+    const targetWidth = bar.getAttribute('data-w');
+    if (!targetWidth) return;
+
+    // If already revealed (fast scroll), animate immediately
+    if (card.classList.contains('in')) {
+      bar.style.width = targetWidth + '%';
+      return;
     }
+    // Otherwise watch for the .in class being added
+    const mo = new MutationObserver(() => {
+      if (card.classList.contains('in')) {
+        bar.style.width = targetWidth + '%';
+        mo.disconnect();
+      }
+    });
+    mo.observe(card, { attributes: true, attributeFilter: ['class'] });
   });
 
-  console.log("Consultant Site Loaded Successfully.");
+  /* ── 5. FAQ ACCORDION ── */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(open => {
+        open.classList.remove('open');
+        open.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (if it wasn't already open)
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  /* ── 6. SMOOTH SCROLL for hash links (nav + mob menu) ── */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      const navH = nav.getBoundingClientRect().height;
+      const top = target.getBoundingClientRect().top + window.scrollY - navH - 16;
+      window.scrollTo({ top, behavior: 'smooth' });
+    });
+  });
+
+  /* ── 7. ACTIVE NAV LINK on scroll ── */
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sectionObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.style.color = link.getAttribute('href') === '#' + entry.target.id
+            ? 'var(--teal)' : '';
+        });
+      }
+    });
+  }, { threshold: 0.4 });
+  sections.forEach(s => sectionObs.observe(s));
+
 })();
 </script>
 </body>
